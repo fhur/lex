@@ -17,9 +17,9 @@ Jeweler::Tasks.new do |gem|
   gem.name = "lex"
   gem.homepage = "http://github.com/fhur/lex"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "fernando@authy.com"
+  gem.summary = %Q{A simple gem to describe Lexers}
+  gem.description = gem.summary
+  gem.email = "fernandohur@gmail.com"
   gem.authors = ["fhur"]
   # dependencies defined in Gemfile
 end
@@ -28,7 +28,7 @@ Jeweler::RubygemsDotOrgTasks.new
 require 'rake/testtask'
 Rake::TestTask.new(:test) do |test|
   test.libs << 'lib' << 'test'
-  test.pattern = 'test/**/test_*.rb'
+  test.pattern = 'spec/**/*_spec.rb'
   test.verbose = true
 end
 
